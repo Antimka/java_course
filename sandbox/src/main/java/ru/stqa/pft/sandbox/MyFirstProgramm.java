@@ -3,31 +3,37 @@ package ru.stqa.pft.sandbox;
 public class MyFirstProgramm {
 
   public static void main(String[] args) {
+    //tut my vyzyvaem funkciju s opredeljonnym parametrom
     hello("Anna");
     hello("Friend!");
 
     int l = 6;
-    int s = l * l;
-    System.out.println("Ploschadj kvadrata so storonoj " + l + " = " + s);
+    int m = l * l;
+    System.out.println("Ploschadj kvadrata so storonoj " + l + " = " + m);
 
-    double len = 5;
-    System.out.println("Ploschadj kvadrata so storonoj " + len + " = " + area(len));
+    Square s = new Square(5);
+    //uzhe otdeljnoe opredelenie storony ne nuzhno, tak kak ispoljzuetsa konstruktor i teperj znachnija peredajutsa, kak parametry - s.l = 5;
+    System.out.println("Ploschadj kvadrata so storonoj " + s.l + " = " + area(s));
 
-    double s1 = 5;
-    double s2 = 6;
-    System.out.println("Ploschadj prjamougoljnika so storonami " + s1 + " i "+ s2 + " = " + area(s1,s2));
+    Rectangle r = new Rectangle(6, 7);
+    //r.a = 5;
+    //r.b = 6;
+    System.out.println("Ploschadj prjamougoljnika so storonami " + r.a + " i "+ r.b + " = " + area(r));
   }
 
+  //eto funkcija
   public static void hello(String somebody) {
     System.out.println("Hello, " + somebody + "!");
   }
 
-  public static double area(double l) {
-    return l * l;
+  //eto funkcija
+  public static double area(Square s) {
+    return s.l * s.l;
   }
 
-  public static double area(double a, double b){
-    return a * b;
+  //eto funkcija
+  public static double area(Rectangle r){
+    return r.a * r.b;
   }
 
 
