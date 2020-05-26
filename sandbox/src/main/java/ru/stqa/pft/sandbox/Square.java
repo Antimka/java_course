@@ -1,6 +1,5 @@
 package ru.stqa.pft.sandbox;
 
-import com.sun.corba.se.impl.encoding.CDROutputObject;
 
 public class Square {
 
@@ -9,5 +8,11 @@ public class Square {
   //eto konstruktor
   public Square(double l){
     this.l = l;
+    }
+
+  //eto funkcija, kotoaja teperj metod
+  public double area() {
+    return this.l * this.l;
+
   }
 }

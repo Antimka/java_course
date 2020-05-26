@@ -13,27 +13,17 @@ public class MyFirstProgramm {
 
     Square s = new Square(5);
     //uzhe otdeljnoe opredelenie storony ne nuzhno, tak kak ispoljzuetsa konstruktor i teperj znachnija peredajutsa, kak parametry - s.l = 5;
-    System.out.println("Ploschadj kvadrata so storonoj " + s.l + " = " + area(s));
+    System.out.println("Ploschadj kvadrata so storonoj " + s.l + " = " + s.area());
 
     Rectangle r = new Rectangle(6, 7);
     //r.a = 5;
     //r.b = 6;
-    System.out.println("Ploschadj prjamougoljnika so storonami " + r.a + " i "+ r.b + " = " + area(r));
+    System.out.println("Ploschadj prjamougoljnika so storonami " + r.a + " i "+ r.b + " = " + r.area());
   }
 
   //eto funkcija
   public static void hello(String somebody) {
     System.out.println("Hello, " + somebody + "!");
-  }
-
-  //eto funkcija
-  public static double area(Square s) {
-    return s.l * s.l;
-  }
-
-  //eto funkcija
-  public static double area(Rectangle r){
-    return r.a * r.b;
   }
 
 
