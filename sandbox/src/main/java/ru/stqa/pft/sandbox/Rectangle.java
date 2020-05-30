@@ -2,6 +2,7 @@ package ru.stqa.pft.sandbox;
 
 public class Rectangle {
 
+  //eto objekty klassa
   public double a;
   public double b;
 
