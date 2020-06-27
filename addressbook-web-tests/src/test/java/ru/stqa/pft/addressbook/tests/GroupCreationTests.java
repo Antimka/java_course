@@ -1,6 +1,7 @@
-package ru.stqa.pft.addressbook;
+package ru.stqa.pft.addressbook.tests;
 
 import org.testng.annotations.*;
+import ru.stqa.pft.addressbook.model.GroupData;
 
 //import org.openqa.selenium.firefox.FirefoxDriver;
 //import org.openqa.selenium.chrome.*;
@@ -11,11 +12,11 @@ public class GroupCreationTests extends TestBase {
 
   @Test
   public void testGroupCreation() throws Exception {
-    goToGroupPage();
-    initGroupCreation();
-    fillGroupForm(new GroupData("test1", "test2", "test3"));
-    submitGroupCreation();
-    returnToGroupPage();
+    app.goToGroupPage();
+    app.initGroupCreation();
+    app.fillGroupForm(new GroupData("test1", "test2", "test3"));
+    app.submitGroupCreation();
+    app.returnToGroupPage();
   }
 
 }
