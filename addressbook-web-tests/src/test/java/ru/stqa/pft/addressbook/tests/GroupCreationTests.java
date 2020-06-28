@@ -7,7 +7,6 @@ import ru.stqa.pft.addressbook.model.GroupData;
 //import org.openqa.selenium.chrome.*;
 //import java.util.concurrent.TimeUnit;
 
-
 public class GroupCreationTests extends TestBase {
 
   @Test
