@@ -27,15 +27,15 @@ public class ApplicationManager {
     //tut boljshe lokaljnaja peremennaja ne nuzhna -
     // vmesto budet ispoljzovan attribut objekta, kotorij byl ispoljzovan pri konstruirovanii etogo objekta
 
-    System.setProperty("webdriver.edge.driver","C:\\Users\\ugisr\\Desktop\\Anna_Java_cource\\installs_and_exe\\msedgedriver.exe"); //put actual location
+    //System.setProperty("webdriver.edge.driver","C:\\Users\\ugisr\\Desktop\\Anna_Java_cource\\installs_and_exe\\msedgedriver.exe"); //put actual location
     //String browser = BrowserType.EDGE;
-    if (browser == BrowserType.CHROME) {
+    if (browser.equals(BrowserType.CHROME)) {
       wd = new ChromeDriver();
-    } else if (browser == BrowserType.FIREFOX) {
+    } else if (browser.equals(BrowserType.FIREFOX)) {
       wd = new FirefoxDriver();
-    } else if (browser == BrowserType.IE) {
+    } else if (browser.equals(BrowserType.IE)) {
       wd = new InternetExplorerDriver();
-    } else if (browser == BrowserType.EDGE) {
+    } else if (browser.equals(BrowserType.EDGE)) {
       wd = new EdgeDriver();
   }
     wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
