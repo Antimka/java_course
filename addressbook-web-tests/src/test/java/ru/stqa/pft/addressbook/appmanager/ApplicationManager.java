@@ -27,7 +27,7 @@ public class ApplicationManager {
     //tut boljshe lokaljnaja peremennaja ne nuzhna -
     // vmesto budet ispoljzovan attribut objekta, kotorij byl ispoljzovan pri konstruirovanii etogo objekta
 
-    //System.setProperty("webdriver.edge.driver","C:\\Users\\ugisr\\Desktop\\Anna_Java_cource\\installs_and_exe\\msedgedriver.exe"); //put actual location
+    System.setProperty("webdriver.edge.driver","C:\\Users\\ugisr\\Desktop\\Anna_Java_cource\\installs_and_exe\\msedgedriver.exe"); //put actual location
     //String browser = BrowserType.EDGE;
     if (browser.equals(BrowserType.CHROME)) {
       wd = new ChromeDriver();
